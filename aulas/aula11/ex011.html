@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrangeiro</title>
+</head>
+<body>
+    <h1>O que você é?</h1>
+    Você vive em qual país?
+    <input type="text" name="país" id="país">
+    <input type="button" value="verificar" onclick="verificar()">
+    <div id="res">
+
+    </div>
+    <script>
+        function verificar() {
+            var país = window.document.getElementById('país').value
+            var res = window.document.getElementById('res')
+            if (país.toUpperCase() == 'BRASIL') {
+                res.innerHTML = `Você é <strong>BRASILEIRO</strong>, que pena para você kkk`
+            } else {
+                res.innerHTML = `Você é <strong>ESTRANGEIRO</strong>, que pena para você que não come a comida brasileira kkk`
+            }
+        }
+    </script>
+</body>
+</html>
